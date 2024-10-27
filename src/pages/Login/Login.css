@@ -1,0 +1,175 @@
+.div-logo-img {
+  height: 11rem;
+}
+
+.main-div {
+  padding: 0px 10px;
+  height: 100vh;
+}
+
+.div-buttons-options {
+  padding: 20px;
+}
+
+.div-buttons-options-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.div-buttons-options-flex button {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #c9d5fc;
+  background-color: #4c49dd;
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.div-buttons-options-flex button.active {
+  background-color: #8694F3 !important;
+}
+
+.div-buttons-options-flex button:first-child{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.div-buttons-options-flex button:nth-child(2){
+  display: flex;
+  justify-content: center;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.list-socials-login li:first-child {
+  font-size: 2.5rem;
+}
+
+.list-socials-login li:nth-child(2) {
+  font-size: 2.5rem;
+  color: #3f51b5;
+}
+
+.list-socials-login li:nth-child(3) {
+  font-size: 2.5rem;
+  color: #0078d4;
+}
+
+.div-form {
+  background-color: white;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.div-password-options {
+  gap: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-socials-login {
+  text-align: center;
+  color: #454545;
+  text-decoration: underline;
+}
+
+.div-socials-login {
+  display: flex;
+  justify-content: center;
+}
+
+.list-socials-login {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+}
+
+.div-btn-submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-logo-img {
+  display: flex;
+  justify-content: center;
+}
+
+.div-form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-top: 25px;
+}
+
+.div-form-inputs form {
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+.div-form-inputs input {
+  padding: 18px 35px;
+}
+
+.div-form-inputs input:focus {
+  outline: 0;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 18px;
+  border-radius: 50px;
+  margin: 20px 0px;
+  border: 0;
+  color: white;
+  background-color: #4c49dd;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.div-password-options label {
+  color: #454545;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.div-password-options p {
+  color: #454545;
+  font-size: 0.9rem;
+}
+
+.div-password-options input {
+  background-color: #e1e9fe;
+  width: auto;
+  margin: 0;
+}
+
+.div-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-register p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.div-register span {
+  color: white;
+  font-weight: 600;
+}
