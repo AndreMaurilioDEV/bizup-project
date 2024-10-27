@@ -34,6 +34,7 @@ function LoginPage() {
     <div className='main-div'>
       <header>
       <div className='div-logo-img'>
+      <img src={Logo} alt="Logotipo BizUp" />
       </div>
       <div className='div-buttons-options'>
         <div className='div-buttons-options-flex'>
