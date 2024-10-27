@@ -3,13 +3,13 @@
 body {
   background-color: #4c49dd;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
 }
 
 ul li {
