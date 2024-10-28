@@ -23,7 +23,7 @@ function LoginPage() {
   ];
 
   const handleFormSubmit = (data: Record<string, string>) => {
-    console.log('V');
+    //
   };
 
   const navigate = useNavigate();
