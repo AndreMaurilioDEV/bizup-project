@@ -1,5 +1,6 @@
 .div-logo-img {
-  height: 11rem;
+  height: auto;
+  max-width: 100%;
 }
 
 .main-div {
@@ -21,7 +22,7 @@
   justify-content: center;
   border: 0.5px solid #c9d5fc;
   background-color: #4c49dd;
-  padding: 15px;
+  padding: 10px;
   color: white;
   font-weight: 600;
 }
@@ -42,17 +43,15 @@
   border-top-right-radius: 20px;
 }
 
-.list-socials-login li:first-child {
-  font-size: 2.5rem;
+.list-socials-login li {
+  font-size: 2rem;
 }
 
 .list-socials-login li:nth-child(2) {
-  font-size: 2.5rem;
   color: #3f51b5;
 }
 
 .list-socials-login li:nth-child(3) {
-  font-size: 2.5rem;
   color: #0078d4;
 }
 
@@ -149,7 +148,7 @@
 
 .div-password-options p {
   color: #454545;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .div-password-options input {
@@ -172,4 +171,14 @@
 .div-register span {
   color: white;
   font-weight: 600;
+}
+
+@media (min-width: 360px) {
+  .div-password-options p {
+      font-size: 0.8rem;
+  }
+
+  .div-logo-img {
+    height: 10rem;
+}
 }
