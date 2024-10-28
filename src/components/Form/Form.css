@@ -18,3 +18,10 @@
 .form-input.has-label span {
   top: 10px;
 }
+
+.p-warn {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: gray;
+  margin: 0px 0px 15px 0px;
+}

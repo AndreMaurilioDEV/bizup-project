@@ -4,8 +4,7 @@ import Form from '../../components/Form/Form';
 import { useState } from 'react';
 import './Login.css';
 import { FcGoogle } from "react-icons/fc";
-import { ImFacebook2 } from "react-icons/im";
-import { ImLinkedin } from "react-icons/im";
+import { BsFacebook } from "react-icons/bs";
 import { LuUser } from "react-icons/lu";
 import { MdLockOutline } from "react-icons/md";
 import { useNavigate } from 'react-router';
@@ -62,32 +61,31 @@ function LoginPage() {
       <div className='div-password-options'>
       <label>
       <input type="checkbox" name="remember" />
-      <p>Lembrar senha?</p>
+      <p>Lembrar senha</p>
       </label>
-        <p>Esqueceu sua senha?</p>
+        <p style={{textDecoration: "underline"}}>Esqueci minha senha</p>
       </div>
       <div className='div-btn-submit'>
-      <button type='submit' className='btn-submit'>Entrar</button>
+      <button type='submit' className='btn-submit'>ENTRAR</button>
+      </div>
+      <span>OU</span>
+      <div className='div-btn-submit'>
+      <button type='submit' 
+      className='btn-submit btn-submit-secondary' 
+      onClick={() => navigate('/cadastro')}>
+        CRIAR CONTA
+        </button>
       </div>
       </div>
-
-      <p className='p-socials-login'>Entrar com uma conta</p>
-
+    
       <div className='div-socials-login'>
         <ul className='list-socials-login'>
-          <li><FcGoogle /></li>
-          <li><ImFacebook2 /></li>
-          <li><ImLinkedin /></li>
+          <li><button><FcGoogle className='icon-login google-icon'/><span>Fazer login com o Google</span></button></li>
+          <li><button><BsFacebook className='icon-login fb-icon'/><span>Conectar com o Facebook</span></button></li>
         </ul>
       </div>
 
       </div>
-      <div className='div-register'>
-        <div className='div-register-flex'>
-        <p>É novo no BizUp? <span onClick={() => navigate('/cadastro')}>Cadastra-se agora!</span></p>
-        </div>
-      </div>
-
     </div>
     </>
   )

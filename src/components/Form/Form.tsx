@@ -9,6 +9,8 @@ interface InputField {
   required?: boolean;
   placeholder?: string;
   icon?: ReactNode;
+  warn?: string;
+  link_warn?: string
 }
 
 interface FormProps {
@@ -38,7 +40,7 @@ function Form({fields, onSubmit, textButton} : FormProps) {
       {fields.map((field) => (
         <div key={field.name} 
         className={`form-input ${field.label ? 'has-label' : ''}`}>
-          {field.label && <label>{field.label}</label>}
+          {field.label ? <label>{field.label}</label> : null}
           <span>{field.icon}</span>
           <input 
           type={field.type}
@@ -48,6 +50,11 @@ function Form({fields, onSubmit, textButton} : FormProps) {
           required={field.required}
           placeholder={field.placeholder}
           />
+          {field.link_warn ? (
+          <a href={field.link_warn} target='_blank' rel="noopener noreferrer">
+          <p className='p-warn'>{field.warn}</p>
+          </a>
+          ) : null}
         </div>
       ))}
     </form>

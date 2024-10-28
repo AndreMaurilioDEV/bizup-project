@@ -1,13 +1,15 @@
 .div-logo-img {
-  height: auto;
+  height: 7rem;
   max-width: 100%;
 }
 
 .main-div {
-  padding: 0px 10px;
   height: 100%;
 }
 
+header {
+  background-color: #4c49dd !important;
+}
 .div-buttons-options {
   padding: 20px;
 }
@@ -22,7 +24,7 @@
   justify-content: center;
   border: 0.5px solid #c9d5fc;
   background-color: #4c49dd;
-  padding: 10px;
+  padding: 8px;
   color: white;
   font-weight: 600;
 }
@@ -41,18 +43,6 @@
   justify-content: center;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-}
-
-.list-socials-login li {
-  font-size: 2rem;
-}
-
-.list-socials-login li:nth-child(2) {
-  color: #3f51b5;
-}
-
-.list-socials-login li:nth-child(3) {
-  color: #0078d4;
 }
 
 .div-form {
@@ -82,13 +72,25 @@
 .div-socials-login {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .list-socials-login {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 10px;
   padding: 0;
+}
+
+.list-socials-login  span{
+  font-size: 1rem;
+}
+
+.list-socials-login  button{
+  gap: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .div-btn-submit {
@@ -118,7 +120,7 @@
 }
 
 .div-form-inputs input {
-  padding: 18px 35px;
+  padding: 12px 35px;
 }
 
 .div-form-inputs input:focus {
@@ -127,7 +129,7 @@
 
 .btn-submit {
   width: 100%;
-  padding: 18px;
+  padding: 12px;
   border-radius: 50px;
   margin: 20px 0px;
   border: 0;
@@ -135,7 +137,12 @@
   background-color: #4c49dd;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.btn-submit-secondary {
+  background-color: white;
+  color: #4c49dd;
+  border: 1px solid #4c49dd;
 }
 
 .div-password-options label {
@@ -149,18 +156,20 @@
 .div-password-options p {
   color: #454545;
   font-size: 0.7rem;
+  margin: 0;
 }
 
 .div-password-options input {
   background-color: #e1e9fe;
   width: auto;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .div-register {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
 }
 
 .div-register p {
@@ -173,12 +182,53 @@
   font-weight: 600;
 }
 
+.list-socials-login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-socials-login button {
+  border: 0;
+  background-color: white;
+  padding: 8px 20px;
+}
+
+.list-socials-login li:first-child button {
+  border: 1px solid #c9c9c9;
+  font-weight: 500;
+} 
+
+
+.list-socials-login li:nth-child(2) button {
+  border: 1px solid #c9c9c9;
+  background-color: #435491;
+  color: white;
+  font-weight: 600;
+} 
+
+.icon-login {
+  font-size: 1.5rem;
+}
+
+.fb-icon {
+  color: white;
+}
+
+.linha-horizontal {
+  border: none; /* Remove a borda padrão */
+  border-top: 1px solid #000; /* Define a cor e o estilo da linha */
+  width: 100%; /* Faz a linha ocupar 100% da largura */
+  margin: 10px 0; /* Adiciona margem acima e abaixo */
+  text-align: center;
+}
+
 @media (min-width: 360px) {
   .div-password-options p {
       font-size: 0.8rem;
   }
 
   .div-logo-img {
-    height: 10rem;
+    height: 8rem;
 }
 }
