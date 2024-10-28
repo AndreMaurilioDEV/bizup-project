@@ -1,10 +1,12 @@
-import { PhoneIcon, UserIcon, LockIcon } from "./icons";
+import { LuUser } from "react-icons/lu";
+import { MdPhone } from "react-icons/md";
+import { MdLockOutline } from "react-icons/md";
 
 export const personalFields = [
-  { name: 'nome', label: "Nome", type: 'text', required: true, placeholder: "Digite seu nome", icon: UserIcon },
-  { name: 'sobrenome', type: 'text', required: true, placeholder: "Digite seu sobrenome", label: "Sobrenome", icon: UserIcon },
-  { name: 'CPF', type: 'text', required: true, placeholder: "Digite seu CPF", label: 'CPF', icon: UserIcon },
-  { name: 'telefone', type: 'tel', required: true, placeholder: "DDD e número de celular", label: "Telefone", icon: PhoneIcon },
+  { name: 'nome', label: "Nome", type: 'text', required: true, placeholder: "Digite seu nome", icon: <LuUser /> },
+  { name: 'sobrenome', type: 'text', required: true, placeholder: "Digite seu sobrenome", label: "Sobrenome", icon: <LuUser /> },
+  { name: 'CPF', type: 'text', required: true, placeholder: "Digite seu CPF", label: 'CPF', icon: <LuUser /> },
+  { name: 'telefone', type: 'tel', required: true, placeholder: "DDD e número de celular", label: "Telefone", icon: <MdPhone /> },
 ];
 
 export const addressFields = [
@@ -20,11 +22,11 @@ export const addressFields = [
 ];
 
 export const addressAccount = [
-  { name: 'e-mail', type: 'text', required: true, placeholder: 'Seu e-mail', icon: UserIcon },
-  { name: 'senha', type: 'password', required: true, placeholder: 'Senha', icon: UserIcon },
+  { name: 'e-mail', type: 'text', required: true, placeholder: 'Seu e-mail', icon: <LuUser /> },
+  { name: 'senha', type: 'password', required: true, placeholder: 'Senha', icon: <LuUser /> },
 ];
 
 export const loginFields = [
-  { name: 'email', type: 'email', required: true, 'placeholder': "Digite seu e-mail", 'icon': UserIcon },
-  { name: 'password', type: 'password', required: true, 'placeholder': "Digite sua senha", 'icon': LockIcon},
+  { name: 'email', type: 'email', required: true, 'placeholder': "Digite seu e-mail", 'icon': <LuUser/> },
+  { name: 'password', type: 'password', required: true, 'placeholder': "Digite sua senha", 'icon': <MdLockOutline/>},
 ];
