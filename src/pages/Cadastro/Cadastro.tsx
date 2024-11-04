@@ -7,6 +7,7 @@ import { useNavigate } from "react-router";
 import { LuUser } from "react-icons/lu";
 import { useState, useEffect } from "react";
 import { MdPhone } from "react-icons/md";
+import { MdLockOutline } from "react-icons/md";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CadastroPage() {
@@ -38,7 +39,7 @@ function CadastroPage() {
 
   const addressAccount = [
     { name: 'e-mail', type: 'text', required: true, 'placeholder': 'Seu e-mail',icon: <LuUser /> },
-    { name: 'senha', type: 'password', required: true, 'placeholder': 'Senha',icon: <LuUser /> },
+    { name: 'senha', type: 'password', required: true, 'placeholder': 'Senha',icon: <MdLockOutline /> },
   ];
 
   const handleFormSubmit = () => {
