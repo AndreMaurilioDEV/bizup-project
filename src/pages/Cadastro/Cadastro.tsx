@@ -5,7 +5,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import './Cadastro.css';
 import { useNavigate } from "react-router";
 import { LuUser } from "react-icons/lu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdPhone } from "react-icons/md";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,6 +13,10 @@ function CadastroPage() {
 
   const [activeKey, setActiveKey] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
 
   const personalFields = [
     { name: 'nome', label: "Nome", type: 'text', required: true, placeholder: "Digite seu nome", icon: <LuUser /> },
@@ -26,11 +30,10 @@ function CadastroPage() {
      'https://buscacepinter.correios.com.br/app/endereco/index.php'},
     { name: 'Endereco', type: 'text', required: true, label: "Endereço" },
     { name: 'numero', type: 'number', required: true, label: "Número"},
-    { name: 'complemento', type: 'text', required: false, placeholder: "Complemento (opcional)" },
-    { name: 'bairro', type: 'text', required: true, label: 'Bairro' },
+    { name: 'complemento', type: 'text', required: false, label: "Complemento (opcional)" },
     { name: 'estado', type: 'text', required: true, label: "Estado" },
+    { name: 'bairro', type: 'text', required: true, label: 'Bairro' },
     { name: 'cidade', type: 'text', required: true, label: "Cidade" },
-    { name: 'referencia', type: 'text', required: true, placeholder: "Ponto de referência (opcional)" },
   ];
 
   const addressAccount = [

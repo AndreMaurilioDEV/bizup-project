@@ -1,7 +1,7 @@
 import Logo from '../../assets/images/Logo.png';
 import React from 'react';
 import Form from '../../components/Form/Form';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Login.css';
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
@@ -16,6 +16,10 @@ function LoginPage() {
   const handleClick = (button) => {
     setIsSelected(button)
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
 
   const fields = [
     { name: 'email', type: 'email', required: true, 'placeholder': "Digite seu e-mail", 'icon': <LuUser/> },
